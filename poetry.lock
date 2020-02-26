@@ -409,6 +409,20 @@ traitlets = "*"
 
 [[package]]
 category = "main"
+description = "Jupyter notebook extension which support coding auto-completion based on Deep Learning"
+name = "jupyter-tabnine"
+optional = false
+python-versions = ">=3.5"
+version = "1.0.2"
+
+[package.dependencies]
+ipython = "*"
+jupyter-core = "*"
+nbconvert = "*"
+notebook = ">=4.2"
+
+[[package]]
+category = "main"
 description = "Jupyter notebooks as Markdown documents, Julia, Python or R scripts"
 name = "jupytext"
 optional = false
@@ -701,7 +715,7 @@ six = ">=1.9"
 [[package]]
 category = "main"
 description = "Run a subprocess in a pseudo terminal"
-marker = "sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\""
+marker = "python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\" and (python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\")"
 name = "ptyprocess"
 optional = false
 python-versions = "*"
@@ -1097,7 +1111,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "041a0f1a6c186d431553f490a40096fa4154b73bd76575eb4ab2a12675703213"
+content-hash = "4549db50607c684c29dd0c9f2e474f504c602313d7655149a540a74858f20661"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1296,6 +1310,9 @@ jupyter-console = [
 jupyter-core = [
     {file = "jupyter_core-4.6.3-py2.py3-none-any.whl", hash = "sha256:a4ee613c060fe5697d913416fc9d553599c05e4492d58fac1192c9a6844abb21"},
     {file = "jupyter_core-4.6.3.tar.gz", hash = "sha256:394fd5dd787e7c8861741880bdf8a00ce39f95de5d18e579c74b882522219e7e"},
+]
+jupyter-tabnine = [
+    {file = "jupyter_tabnine-1.0.2-py2.py3-none-any.whl", hash = "sha256:77e7a365b7c4855362e5677190ecd9aabefaddfbc5d90ca59c84b34e086c7cdc"},
 ]
 jupytext = [
     {file = "jupytext-1.3.4.tar.gz", hash = "sha256:23d56a92c8bf8166a27d87fe9049b2791d981b6a90cbec4cfc53ab381471324a"},
