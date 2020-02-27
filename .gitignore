@@ -1,6 +1,6 @@
 # Custom
 .idea
-TensorFlow/data
+TensorFlow/data/legacy.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

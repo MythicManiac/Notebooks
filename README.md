@@ -9,3 +9,7 @@ jupyter nbextension enable --py jupyter_tabnine
 jupyter serverextension enable --py jupyter_tabnine
 ```
 
+# Running
+
+Run `jupyter notebook`
+
